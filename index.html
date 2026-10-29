@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals homepage for Anastasia Fowkes, a Ukrainian student who recently moved to Gdańsk, Poland. Learn about her background and explore web development resources.">
+    <meta name="author" content="Anastasia Fowkes">
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Anastasia Fowkes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav aria-label="Main navigation">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank"
+                rel="noopener noreferrer">Scripture</a>
+            <a href="#final-project">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Anastasia Fowkes</h1>
+
+        <div class="card-grid">
+            <section class="card about-card">
+                <h2>About Me</h2>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hi! My name is Anastasia Fowkes. I am originally from Ukraine,
+                            and I moved to Gdańsk, Poland, just three months ago.
+                            Moving to a new country has been an exciting opportunity
+                            to discover a new place, learn, and grow. I am studying
+                            web development and enjoy understanding how websites work
+                            and how design and code come together.
+                        </p>
+
+                        <p>
+                            I am a properly structured webpage. My thoughts are HTML,
+                            my appearance is CSS, and my brain is ready for JavaScript.
+                        </p>
+                    </div>
+
+                    <img class="profile-image" src="images/profile.jpg" alt="Portrait of Anastasia Fowkes" width="220"
+                        height="260">
+                </div>
+
+                <div class="location">
+                    <h3>My Home Country: Ukraine</h3>
+                    <div class="country-content">
+                        <img src="images/ukraine-flag.webp" alt="Flag of Ukraine" width="160" height="100">
+
+                        <p>
+                            Ukraine is a country in Eastern Europe with a rich history,
+                            vibrant culture, and beautiful landscapes. It is known for
+                            its traditions, historic cities, and blue-and-yellow flag.
+                            Although I recently moved to Poland, Ukraine is where I am
+                            originally from and an important part of my story.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card resources-card">
+                <h2>Web Dev Resources</h2>
+
+                <p>
+                    These are some useful resources for learning web development
+                    and practicing my skills:
+                </p>
+
+                <ul>
+                    <li>
+                        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web
+                            Docs</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a>
+                    </li>
+                    <li>
+                        <a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a>
+                    </li>
+                    <li>
+                        <a href="https://www.freecodecamp.org/" target="_blank"
+                            rel="noopener noreferrer">freeCodeCamp</a>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">CodePen</a>
+                    </li>
+                    <li>
+                        <a href="https://docs.github.com/" target="_blank" rel="noopener noreferrer">GitHub Docs</a>
+                    </li>
+                </ul>
+
+                <div id="final-project">
+                    <h3>Final Project</h3>
+                    <p>
+                        This section is reserved for my final project. I will add
+                        the project link here when it is ready.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Anastasia Fowkes | Ukraine</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

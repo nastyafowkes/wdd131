@@ -1,0 +1,9 @@
+The Three Core Web Technologies
+HTML – Defines the structure and content of a webpage.
+CSS – Controls the appearance and styling of a webpage.
+JavaScript – Controls behavior and interactivity on a webpage.
+
+Brain     -> scripts
+Appearance -> styles
+Memories/Pictures -> images
+Speech and Identity -> index.html
