@@ -1,0 +1,130 @@
+:root {
+    --purple: #3b0764;
+    --white: #ffffff;
+    --text: #111111;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: var(--text);
+    background-color: var(--white);
+}
+
+header {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+#menu {
+    display: block;
+    background: transparent;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+}
+
+#menu:hover {
+    background-color: #581c87;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    background-color: #581c87;
+    text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #facc15;
+    outline-offset: 3px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem 1rem;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+figcaption {
+    padding-top: 0.35rem;
+    color: var(--purple);
+    font-size: 0.9rem;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+    padding: 0.8rem 1rem;
+}
+
+footer p {
+    margin: 0.15rem 0;
+}
