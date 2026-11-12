@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover Ukraine through its landscapes, culture, geography, and weather. WDD 131 Country Page by Anastasia Fowkes.">
+    <meta name="author" content="Anastasia Fowkes">
+    <title>Ukraine | WDD 131 | Anastasia Fowkes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ukraine</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/ukraine-large.webp">
+                <source media="(min-width: 600px)" srcset="images/ukraine-medium.webp">
+                <img src="images/ukraine-small.webp" alt="Golden wheat field beneath a blue sky in Ukraine" width="480"
+                    height="270">
+            </picture>
+
+            <section class="data">
+                <h2>Data</h2>
+                <dl>
+                    <div>
+                        <dt>Area:</dt>
+                        <dd>603,628 km²</dd>
+                    </div>
+                    <div>
+                        <dt>Capital:</dt>
+                        <dd>Kyiv</dd>
+                    </div>
+                    <div>
+                        <dt>Population:</dt>
+                        <dd>Approximately 36 million (estimate)</dd>
+                    </div>
+                    <div>
+                        <dt>Language:</dt>
+                        <dd>Ukrainian</dd>
+                    </div>
+                    <div>
+                        <dt>Currency:</dt>
+                        <dd>Ukrainian hryvnia (UAH)</dd>
+                    </div>
+                    <div>
+                        <dt>Time Zone:</dt>
+                        <dd>UTC+2 / UTC+3 (summer)</dd>
+                    </div>
+                    <div>
+                        <dt>Calling Code:</dt>
+                        <dd>+380</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+                <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy weather icon" width="64"
+                    height="64">
+
+                <dl>
+                    <div>
+                        <dt>Temperature:</dt>
+                        <dd><span id="temperature">8</span> °C</dd>
+                    </div>
+                    <div>
+                        <dt>Conditions:</dt>
+                        <dd>Partly Cloudy</dd>
+                    </div>
+                    <div>
+                        <dt>Wind:</dt>
+                        <dd><span id="windSpeed">12</span> km/h</dd>
+                    </div>
+                    <div>
+                        <dt>Wind Chill:</dt>
+                        <dd><span id="windChill">N/A</span></dd>
+                    </div>
+                </dl>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Anastasia Fowkes | Ukraine</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
