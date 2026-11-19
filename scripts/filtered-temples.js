@@ -12,36 +12,35 @@ const temples = [
     location: "Manti, Utah, United States",
     dedicated: "1888, May, 21",
     area: 74792,
-    // Temporary image: replace with a real Manti photo
-    imageUrl: "images/temple3.webp"
+    imageUrl: "images/manti-utah.webp"
   },
   {
     templeName: "Payson Utah",
     location: "Payson, Utah, United States",
     dedicated: "2015, June, 7",
     area: 96630,
-    imageUrl: "images/temple3.webp"
+    imageUrl: "images/payson-utah.webp"
   },
   {
     templeName: "Yigo Guam",
     location: "Yigo, Guam",
     dedicated: "2020, May, 2",
     area: 6861,
-    imageUrl: "images/temple5.webp"
+    imageUrl: "images/yigo-guam.webp"
   },
   {
     templeName: "Washington D.C.",
     location: "Kensington, Maryland, United States",
     dedicated: "1974, November, 19",
     area: 156558,
-    imageUrl: "images/temple9.webp"
+    imageUrl: "images/washington-dc.webp"
   },
   {
     templeName: "Lima Perú",
     location: "Lima, Perú",
     dedicated: "1986, January, 10",
     area: 9600,
-    imageUrl: "images/temple4.webp"
+    imageUrl: "images/lima-peru.webp"
   },
   {
     templeName: "Mexico City Mexico",
@@ -72,6 +71,7 @@ const temples = [
     imageUrl: "images/temple6.webp"
   }
 ];
+
 
 const gallery = document.querySelector("#temple-gallery");
 const pageTitle = document.querySelector("#page-title");
