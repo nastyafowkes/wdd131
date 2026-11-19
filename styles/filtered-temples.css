@@ -1,0 +1,189 @@
+:root {
+    --primary: #243b75;
+    --primary-dark: #17284f;
+    --background: #f5f7fc;
+    --card: #ffffff;
+    --text: #222b3b;
+    --accent: #e5b64b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+/* Header */
+
+header {
+    background: var(--primary);
+    color: white;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Mobile menu */
+
+#menu {
+    display: block;
+    background: transparent;
+    color: white;
+    border: 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.85rem 1rem;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a.active {
+    background: var(--primary-dark);
+    color: #ffffff;
+}
+
+/* Main content */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    min-height: 70vh;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+/* Temple gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Temple cards */
+
+.temple-card {
+    background: var(--card);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--accent);
+}
+
+.temple-card h2 {
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin: 0 0 1rem;
+}
+
+.temple-card p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.temple-card strong {
+    color: var(--primary-dark);
+}
+
+.temple-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 8 / 5;
+    object-fit: cover;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+/* Footer */
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    color: #f5d78c;
+    font-size: 0.9rem;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 900px) {
+    #menu {
+        display: none;
+    }
+
+    .header-content {
+        flex-wrap: nowrap;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 0.5rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
