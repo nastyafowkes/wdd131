@@ -132,7 +132,7 @@ h1 {
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 8 / 5;
+    aspect-ratio: 400 / 267;
     object-fit: cover;
     margin-top: 1rem;
     border-radius: 8px;
