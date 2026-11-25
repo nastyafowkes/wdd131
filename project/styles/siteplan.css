@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #10b981;
+    --background-color: #f8fafc;
+    --text-color: #1f2937;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.logo {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+h1,
+h2 {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+section {
+    background-color: var(--white);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.color-box {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.wireframe {
+    background-color: #f3f4f6;
+    border: 2px solid #999;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-family: monospace;
+    white-space: pre-line;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--secondary-color);
+}
+
+/* Typography examples */
+
+.heading-font {
+    font-family: "Poppins", sans-serif;
+}
+
+.body-font {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .color-box {
+        width: 100px;
+        height: 35px;
+    }
+
+    .wireframe {
+        font-size: 0.9rem;
+    }
+}
