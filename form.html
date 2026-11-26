@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22%23243b75%22%2F%3E%3Cpath%20d%3D%22M16%2032l10%2010%2022-22%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%227%22%2F%3E%3C%2Fsvg%3E">
+    <meta name="author" content="Anastasia Fowkes">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <meta name="description" content="Share your product experience. Rate your product, select useful features, and write an optional review.">
+    <title>Product Review | Anastasia Fowkes</title>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to review form</a>
+    <header><p class="eyebrow">YOUR EXPERIENCE MATTERS</p><h1>Product Review</h1><p>Tell us how your product worked for you.</p></header>
+    <main id="main">
+        <form method="get" action="review.html">
+            <p class="form-note">Fields marked <span class="required">*</span> are required.</p>
+            <div class="field">
+                <label for="product">Product Name <span class="required">*</span></label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Overall Rating <span class="required">*</span></legend>
+                <p class="hint" id="rating-help">Choose a rating from 1 (lowest) to 5 (highest).</p>
+                <div class="rating-group" aria-describedby="rating-help">
+                    <div class="rating-option">
+                        <input type="radio" id="rating-1" name="rating" value="1" required>
+                        <label for="rating-1"><span class="stars" aria-hidden="true">☆</span><span>1 <span class="sr-only">star</span></span></label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="rating-2" name="rating" value="2" required>
+                        <label for="rating-2"><span class="stars" aria-hidden="true">☆☆</span><span>2 <span class="sr-only">stars</span></span></label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="rating-3" name="rating" value="3" required>
+                        <label for="rating-3"><span class="stars" aria-hidden="true">☆☆☆</span><span>3 <span class="sr-only">stars</span></span></label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="rating-4" name="rating" value="4" required>
+                        <label for="rating-4"><span class="stars" aria-hidden="true">☆☆☆☆</span><span>4 <span class="sr-only">stars</span></span></label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="rating-5" name="rating" value="5" required>
+                        <label for="rating-5"><span class="stars" aria-hidden="true">☆☆☆☆☆</span><span>5 <span class="sr-only">stars</span></span></label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="field">
+                <label for="installation-date">Date of Installation <span class="required">*</span></label>
+                <input type="date" id="installation-date" name="installationDate" required>
+            </div>
+            <fieldset>
+                <legend>Useful Features <span class="optional">(optional)</span></legend>
+                <p class="hint">Which features did you find useful? Check all that apply.</p>
+                <div class="features">
+                    <label class="check-option" for="durability"><input type="checkbox" id="durability" name="features" value="durability"> Durability</label>
+                    <label class="check-option" for="ease-of-use"><input type="checkbox" id="ease-of-use" name="features" value="ease-of-use"> Ease of use</label>
+                    <label class="check-option" for="performance"><input type="checkbox" id="performance" name="features" value="performance"> Performance</label>
+                    <label class="check-option" for="design"><input type="checkbox" id="design" name="features" value="design"> Design</label>
+                </div>
+            </fieldset>
+            <div class="field">
+                <label for="written-review">Written Review <span class="optional">(optional)</span></label>
+                <textarea id="written-review" name="writtenReview" rows="5" placeholder="What worked well? What could be better?"></textarea>
+            </div>
+            <div class="field">
+                <label for="user-name">Your Name <span class="optional">(optional)</span></label>
+                <input type="text" id="user-name" name="userName" autocomplete="name">
+            </div>
+            <input class="submit-button" type="submit" value="Submit Review">
+        </form>
+        <noscript><p class="notice">Please enable JavaScript to choose a product and complete this form.</p></noscript>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Anastasia Fowkes | Ukraine</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

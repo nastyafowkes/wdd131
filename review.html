@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22%23243b75%22%2F%3E%3Cpath%20d%3D%22M16%2032l10%2010%2022-22%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%227%22%2F%3E%3C%2Fsvg%3E">
+    <meta name="author" content="Anastasia Fowkes">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <meta name="description" content="Your product review confirmation and the number of reviews completed in this browser.">
+    <meta name="robots" content="noindex">
+    <title>Review Confirmation | Anastasia Fowkes</title>
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to confirmation</a>
+    <header><p class="eyebrow">PRODUCT REVIEW</p><h1>Review Confirmation</h1><p>Thank you for taking the time to share your experience.</p></header>
+    <main id="main" class="confirmation">
+        <section class="confirmation-card" aria-labelledby="confirmation-title">
+            <h2 id="confirmation-title">Review status</h2>
+            <p id="confirmation-message" role="status">Checking your submission…</p>
+            <p class="counter">Reviews completed in this browser: <strong id="review-count">—</strong></p>
+            <p class="hint" id="storage-message">The counter is saved on this browser and device.</p>
+            <a class="button-link" href="form.html">Write another review</a>
+        </section>
+        <noscript><p class="notice">Enable JavaScript to view your confirmation and saved review count.</p></noscript>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Anastasia Fowkes | Ukraine</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
